@@ -16,6 +16,10 @@ namespace ConsoleApplicationsTDPC12
          */
         static void Main(string[] args)
         {
+            Console.WriteLine("Benvenuto utente");
+            string stringa = Console.ReadLine();
+            int numero = int.Parse(stringa);
+            Console.WriteLine(numero + 1);
         }
     }
 }
