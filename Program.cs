@@ -8,6 +8,12 @@ namespace ConsoleApplicationsTDPC12
 {
     class Program
     {
+        /*
+         Scrivere un programma che:
+            - Dia il benvenuto all'utente
+            - Chieda all'utente un numero
+            - Stampi sullo schermo il risultato di "numero + 1"
+         */
         static void Main(string[] args)
         {
         }
