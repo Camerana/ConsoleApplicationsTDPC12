@@ -8,6 +8,64 @@ namespace ConsoleApplicationsTDPC12
 {
     class Program
     {
+        /*
+         Scrivere un programma che:
+            - Chieda all'utente 2 stringhe
+            - Nel caso le due stringhe siano uguali tra di loro come contenuto:
+                - Stampi su schermo "Le stringhe sono uguali"
+            - Nel caso la prima stringa sia più lunga della seconda:
+                - Stampi su schermo "La prima stringa è più lunga della seconda"
+            - Nel caso la seconda stringa sia più lunga della prima:
+                - Chieda all'utente una terza stringa
+                - Nel caso la terza stringa sia uguale alla prima come contenuto:
+                    - Stampi su schermo "Easter egg"
+         */
+        static void Main(string[] args)
+        {
+
+        }
+
+        /*
+        static void Main(string[] args)
+        {
+            string validUsername = "Admin";
+            string validPassword = "123";
+
+            Console.WriteLine("Inserisci lo username");
+            string username = Console.ReadLine();
+
+            Console.WriteLine("Inserisci la password");
+            string password = Console.ReadLine();
+
+            if (username == validUsername && password == validPassword)
+            {
+                Console.WriteLine("Benvenuto Admin");
+            }
+            else
+            {
+                Console.WriteLine("Errore");
+            }
+            Console.ReadKey();
+        }
+        */
+        /*
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Inserisci una stringa qualsiasi");
+            string input = Console.ReadLine();
+
+            if (input.StartsWith("A"))
+            {
+                Console.WriteLine("Inserisci un'altra stringa qualsiasi");
+                input = Console.ReadLine();
+                if (input.Length == 10)
+                {
+                    Console.WriteLine(10);
+                }
+            }
+        }
+        */
+        /*
         static void Main(string[] args)
         {
             Console.WriteLine("Inserisci una parola");
@@ -55,5 +113,6 @@ namespace ConsoleApplicationsTDPC12
 
             Console.ReadKey();
         }
+        */
     }
 }
