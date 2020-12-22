@@ -32,7 +32,7 @@ namespace ConsoleApplicationsTDPC12
                 Console.WriteLine("Le stringhe sono uguali");
             if (firstString.Length > secondString.Length)
                 Console.WriteLine("La prima stringa è più lunga della seconda");
-            if (secondString.Length > firstString.Length)
+            else if (secondString.Length > firstString.Length)
             {
                 Console.WriteLine("Inserisci la terza stringa");
                 string thirdString = Console.ReadLine();
