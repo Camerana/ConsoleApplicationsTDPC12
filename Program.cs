@@ -10,12 +10,40 @@ namespace ConsoleApplicationsTDPC12
     {
         /*
          Scrivere un programma che:
+            - Generi un numero casuale
+            - Stampi sullo schermo il numero
+            - Chieda all'utente un secondo numero intero
+            - Stampi su schermo la differenza tra il primo numero e il secondo
+         */
+        static void Main(string[] args)
+        {
+            Random random = new Random();
+            int num1 = random.Next();
+
+            Console.WriteLine(num1);
+
+            Console.WriteLine("Inserisci un numero");
+            int num2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(num1 - num2);
+
+            Console.ReadKey();
+        }
+
+
+
+
+
+
+        /*
+         Scrivere un programma che:
             - Dati 4 numeri interi (non chiesti all'utente):
                 - Stampi su schermo la media dei 4 numeri (decimal)
                 - Stampi su schermo il maggiore tra il primo e il quarto numero
             - Chieda all'utente una stringa qualsiasi e:
                 - Stampi su schermo la somma tra la lunghezza della stringa e il primo numero
          */
+        /*
         static void Main(string[] args)
         {
             int num1 = 7;
@@ -37,6 +65,7 @@ namespace ConsoleApplicationsTDPC12
 
             Console.ReadKey();
         }
+        */
         /*
          Scrivere un programma che:
             - Chieda all'utente due numeri (solo interi)
