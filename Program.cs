@@ -8,6 +8,22 @@ namespace ConsoleApplicationsTDPC12
 {
     class Program
     {
+        //Termine: 21.30
+        /*
+         Scrivere un programma che:
+            - Chieda 3 stringhe all'utente
+            - Verifichi se le tre stringhe terminano con la stessa lettera
+            - In caso positivo:
+                - Stampi su schermo "Eureka"
+            - In caso negativo:
+                - Chieda all'utente una quarta stringa
+                - Stampi su schermo la somma delle lunghezze delle 4 stringhe            
+         */
+        static void Main(string[] args)
+        {
+
+        }
+
         /*
          Scrivere un programma che:
             - Generi un numero casuale
@@ -15,6 +31,7 @@ namespace ConsoleApplicationsTDPC12
             - Chieda all'utente un secondo numero intero
             - Stampi su schermo la differenza tra il primo numero e il secondo
          */
+        /*
         static void Main(string[] args)
         {
             Random random = new Random();
@@ -29,11 +46,7 @@ namespace ConsoleApplicationsTDPC12
 
             Console.ReadKey();
         }
-
-
-
-
-
+        */
 
         /*
          Scrivere un programma che:
