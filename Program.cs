@@ -22,7 +22,24 @@ namespace ConsoleApplicationsTDPC12
          */
         static void Main(string[] args)
         {
+            Console.WriteLine("Inserisci la prima stringa");
+            string firstString = Console.ReadLine();
 
+            Console.WriteLine("Inserisci la seconda stringa");
+            string secondString = Console.ReadLine();
+
+            if (firstString == secondString)
+                Console.WriteLine("Le stringhe sono uguali");
+            if (firstString.Length > secondString.Length)
+                Console.WriteLine("La prima stringa è più lunga della seconda");
+            if (secondString.Length > firstString.Length)
+            {
+                Console.WriteLine("Inserisci la terza stringa");
+                string thirdString = Console.ReadLine();
+
+                if (thirdString == firstString)
+                    Console.WriteLine("Easter egg");
+            }
         }
 
         /*
