@@ -25,7 +25,34 @@ namespace ConsoleApplicationsTDPC12
                 Remove()
                 Format()
          */
-        /*  Termine: 20:15
+        /*
+         * 
+            Scrivere un programma che:
+                - Generi un numero casuale tra 0 e 4
+                - Chieda all'utente un secondo numero
+                - Sommi i due numeri
+                - Chieda all'utente una stringa
+                - Stampi sullo schermo i caratteri della stringa a partire dall'indice 0
+                fino a un totale di caratteri pari alla somma
+         */
+        static void Main(string[] args)
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(0, 5);
+
+            Console.WriteLine("Inserisci un numero");
+            int numberFromUser = int.Parse(Console.ReadLine());
+
+            int total = randomNumber + numberFromUser;
+
+            Console.WriteLine("Inserisci una stringa");
+            string stringFromUser = Console.ReadLine();
+
+            string result = stringFromUser.Substring(0, total);
+
+            Console.WriteLine(result);
+        }
+        /*
             Scrivere un programma che:
                 - Chieda all'utente due stringhe
                 - Verifichi se le due stringhe hanno la stessa lunghezza
