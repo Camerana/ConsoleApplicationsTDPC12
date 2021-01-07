@@ -21,7 +21,24 @@ namespace ConsoleApplicationsTDPC12
          */
         static void Main(string[] args)
         {
+            Console.WriteLine("Inserisci la prima stringa");
+            string stringa1 = Console.ReadLine();
 
+            Console.WriteLine("Inserisci la seconda stringa");
+            string stringa2 = Console.ReadLine();
+
+            Console.WriteLine("Inserisci la terza stringa");
+            string stringa3 = Console.ReadLine();
+
+            if (stringa1.Last().Equals(stringa2.Last())
+                && stringa1.Last().Equals(stringa3.Last()))
+                Console.WriteLine("Eureka");
+            else
+            {
+                Console.WriteLine("Inserisci la quarta stringa");
+                string stringa4 = Console.ReadLine();
+                Console.WriteLine("Lunghezza totale: " + (stringa1.Length + stringa2.Length + stringa3.Length + stringa4.Length));
+            }
         }
 
         /*
