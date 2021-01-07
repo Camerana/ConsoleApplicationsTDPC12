@@ -26,7 +26,45 @@ namespace ConsoleApplicationsTDPC12
                 Format()
          */
         /*
-         * 
+            Scrivere un programma che:
+                - Generi un numero casuale tra 0 e 4
+                - Chieda all'utente un secondo numero
+                - Sommi i due numeri
+                - Chieda all'utente una stringa
+                - Stampi sullo schermo i caratteri della stringa a partire dall'indice 0
+                fino a un totale di caratteri pari alla somma
+                - Gestire eventuali errori
+         */
+        static void Main(string[] args)
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(0, 5);
+
+            Console.WriteLine("Inserisci un numero");
+            try
+            {
+                int numberFromUser = int.Parse(Console.ReadLine());
+                int total = randomNumber + numberFromUser;
+
+                Console.WriteLine("Inserisci una stringa");
+                string stringFromUser = Console.ReadLine();
+
+                try
+                {
+                    string result = stringFromUser.Substring(0, total);
+                    Console.WriteLine(result);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("La stringa è troppo corta");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Puoi inserire solo numeri");
+            }
+        }
+        /*
             Scrivere un programma che:
                 - Generi un numero casuale tra 0 e 4
                 - Chieda all'utente un secondo numero
@@ -35,6 +73,7 @@ namespace ConsoleApplicationsTDPC12
                 - Stampi sullo schermo i caratteri della stringa a partire dall'indice 0
                 fino a un totale di caratteri pari alla somma
          */
+        /*
         static void Main(string[] args)
         {
             Random random = new Random();
@@ -52,6 +91,7 @@ namespace ConsoleApplicationsTDPC12
 
             Console.WriteLine(result);
         }
+        */
         /*
             Scrivere un programma che:
                 - Chieda all'utente due stringhe
