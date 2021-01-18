@@ -9,11 +9,32 @@ namespace ConsoleApplicationsTDPC12
     class Program
     {
         /*
-         * Utilità di una funzione:
-         *  - non ripetere il codice
-         *  - riutilizzare il codice
-         *  - fare in modo che le funzionalità siano separate tra di loro         
+         Scrivere un programma che:
+            - Chieda all'utente due numeri
+            - Calcoli tramite 2 funzioni somma e differenza fra i due numeri
+            - Stampi su schermo la somma e la differenza
+            - Chieda all'utente un terzo numero
+            - Calcoli tramite una terza funzione la somma totale fra i tre numeri
+            - Stampi su schermo la somma totale
          */
+
+        static void Main(string[] args)
+        {
+        }
+
+
+        /*
+         Utilità di una funzione:
+          - non ripetere il codice
+          - riutilizzare il codice
+          - fare in modo che le funzionalità siano separate tra di loro   
+         */
+        /*
+         Proprietà di una funzione:
+            - void o return
+            - con o senza parametri in ingresso         
+         */
+        /*
         static void Main(string[] args)
         {
             string input = GetInput();
@@ -36,7 +57,7 @@ namespace ConsoleApplicationsTDPC12
             string filteredInput = input.Replace("casa", "domicilio");
             Console.WriteLine(filteredInput);
         }
-
+        */
 
         /*
         static void Main(string[] args)
