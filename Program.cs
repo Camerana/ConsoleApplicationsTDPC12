@@ -17,7 +17,37 @@ namespace ConsoleApplicationsTDPC12
             - Calcoli tramite una terza funzione la somma totale fra i tre numeri
             - Stampi su schermo la somma totale
          */
-
+        static void Main(string[] args)
+        {
+            int numero1 = GetNumber("primo");
+            int numero2 = GetNumber("secondo");
+            int somma = Somma(numero1, numero2);
+            Console.WriteLine("Somma = " + somma);
+            int differenza = Differenza(numero1, numero2);
+            Console.WriteLine("Differenza = " + differenza);
+            int numero3 = GetNumber("terzo");
+            int totale = Totale(numero1, numero2, numero3);
+            Console.WriteLine("Totale = " + totale);
+            Console.ReadKey();
+        }
+        static int GetNumber(string ordinale)
+        {
+            Console.WriteLine("Inserisci il " + ordinale + " numero");
+            return int.Parse(Console.ReadLine());
+        }
+        static int Somma(int num1, int num2)
+        {
+            return num1 + num2;
+        }
+        static int Differenza(int num1, int num2)
+        {
+            return num1 - num2;
+        }
+        static int Totale(int num1, int num2, int num3)
+        {
+            return num1 + num2 + num3;
+        }
+        /*
         static void Main(string[] args)
         {
             Console.WriteLine("Inserisci il primo numero");
@@ -38,6 +68,7 @@ namespace ConsoleApplicationsTDPC12
             int totale = Totale(numero1, numero2, numero3);
             Console.WriteLine(totale);
         }
+        
         static int Somma(int num1, int num2)
         {
             return num1 + num2;
@@ -50,7 +81,7 @@ namespace ConsoleApplicationsTDPC12
         {
             return num1 + num2 + num3;
         }
-
+        */
         /*
          Utilità di una funzione:
           - non ripetere il codice
