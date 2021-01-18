@@ -10,18 +10,46 @@ namespace ConsoleApplicationsTDPC12
     {
         /*
          Scrivere un programma che:
-            - Chieda all'utente due numeri
+            - Chieda all'utente due numeri interi
             - Calcoli tramite 2 funzioni somma e differenza fra i due numeri
             - Stampi su schermo la somma e la differenza
-            - Chieda all'utente un terzo numero
+            - Chieda all'utente un terzo numero intero
             - Calcoli tramite una terza funzione la somma totale fra i tre numeri
             - Stampi su schermo la somma totale
          */
 
         static void Main(string[] args)
         {
-        }
+            Console.WriteLine("Inserisci il primo numero");
+            int numero1 = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("Inserisci il secondo numero");
+            int numero2 = int.Parse(Console.ReadLine());
+
+            int somma = Somma(numero1, numero2);
+            Console.WriteLine(somma);
+
+            int differenza = Differenza(numero1, numero2);
+            Console.WriteLine(differenza);
+
+            Console.WriteLine("Inserisci il terzo numero");
+            int numero3 = int.Parse(Console.ReadLine());
+
+            int totale = Totale(numero1, numero2, numero3);
+            Console.WriteLine(totale);
+        }
+        static int Somma(int num1, int num2)
+        {
+            return num1 + num2;
+        }
+        static int Differenza(int num1, int num2)
+        {
+            return num1 - num2;
+        }
+        static int Totale(int num1, int num2, int num3)
+        {
+            return num1 + num2 + num3;
+        }
 
         /*
          Utilità di una funzione:
