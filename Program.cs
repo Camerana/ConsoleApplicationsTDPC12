@@ -10,6 +10,60 @@ namespace ConsoleApplicationsTDPC12
     {
         /*
          Scrivere un programma che:
+            - prenda in input dall'utente un numero
+            - se il numero è 1:
+                - stampi su schermo la stringa "Numero_1" tramite una funzione
+            - altrimenti:
+                - stampi su schermo il numero tramite una seconda funzione
+         */
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Inserisci un numero");
+            int numero = int.Parse(Console.ReadLine());
+            if (numero == 1)
+                PrintString();
+            else
+                PrintNumber(numero);
+            Console.ReadKey();
+        }
+        static void PrintString()
+        {
+            Console.WriteLine("Numero_1");
+        }
+        static void PrintNumber(int numero)
+        {
+            Console.WriteLine(numero);
+        }
+        /*
+         Scrivere un programma che:
+            - Date due stringhe:
+                - stampi su schermo la prima stringa tramite una funzione
+                - verifichi se la seconda è contenuta nella prima
+                - stampi su schermo la lunghezza della seconda tramite una seconda funzione
+         */
+        /*
+        static void Main(string[] args)
+        {
+            string stringa1 = "Sono in Piemonte";
+            string stringa2 = "Piemonte";
+            PrintString(stringa1);
+            if (stringa1.Contains(stringa2))
+                Console.WriteLine("La prima stringa contiene la seconda");
+            PrintLength(stringa2);
+            Console.ReadKey();
+        }
+        static void PrintString(string stringa)
+        {
+            Console.WriteLine(stringa);
+        }
+        static void PrintLength(string stringa)
+        {
+            Console.WriteLine(stringa.Length);
+        }
+        */
+
+        /*
+         Scrivere un programma che:
             - Chieda all'utente due numeri interi
             - Calcoli tramite 2 funzioni somma e differenza fra i due numeri
             - Stampi su schermo la somma e la differenza
@@ -17,6 +71,7 @@ namespace ConsoleApplicationsTDPC12
             - Calcoli tramite una terza funzione la somma totale fra i tre numeri
             - Stampi su schermo la somma totale
          */
+        /*
         static void Main(string[] args)
         {
             int numero1 = GetNumber("primo");
@@ -47,6 +102,7 @@ namespace ConsoleApplicationsTDPC12
         {
             return num1 + num2 + num3;
         }
+        */
         /*
         static void Main(string[] args)
         {
@@ -68,7 +124,7 @@ namespace ConsoleApplicationsTDPC12
             int totale = Totale(numero1, numero2, numero3);
             Console.WriteLine(totale);
         }
-        
+
         static int Somma(int num1, int num2)
         {
             return num1 + num2;
