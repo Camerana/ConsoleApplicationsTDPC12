@@ -8,6 +8,51 @@ namespace ConsoleApplicationsTDPC12
 {
     class Program
     {
+        //20210121
+        /*
+         Scrivere un programma che:
+            - chieda all'utente una stringa
+            - stampi su schermo la stringa al contrario
+            - tramite un ciclo stampi i numeri da 0 fino alla lunghezza della stringa
+            inserita dall'utente
+         */
+        /*
+         Scrivere un programma che:
+            - chieda all'utente 3 numeri
+            - stampi su schermo i 3 numeri in ordine crescente
+            - stampi su schermo solo i numeri pari tra i 3
+         */
+        /*
+         Scrivere un programma che:
+            - chieda all'utente il suo nome
+            - tramite una funzione stampi su schermo il nome dell'utente anagrammato
+         */
+        /*
+         Scrivere un programma che:
+            - chieda all'utente 3 numeri (a,b,c)
+            - calcoli altri 3 numeri (x,y,z), di modo che le moltiplicazioni a*x, b*y e c*z
+            abbiano lo stesso risultato
+         */
+        /*
+         Scrivere un programma che:
+            - chieda all'utente una stringa
+            - stampi su schermo la stringa in minuscolo
+            - stampi su schermo la stringa in maiuscolo
+            - nel caso la stringa abbia un numero di caratteri dispari,
+            stampi su schermo il carattere centrale
+         */
+        /*
+         Scrivere un programma che:
+            - chieda all'utente di scegliere un colore fra 3 opzioni
+            - tramite una funzione setti il colore del testo della console
+            a quello scelto dall'utente
+         */
+
+
+
+
+
+        //20210118
         /*
          Scrivere un programma che:
             - chieda all'utente una stringa
