@@ -8,6 +8,38 @@ namespace ConsoleApplicationsTDPC12
 {
     class Program
     {
+        //20210131
+        /*
+         Scrivere un programma che:
+            - chieda all'utente due numeri interi
+            - faccia un ciclo for da 0 fino al primo numero e ad ogni iterazione stampi la somma tra
+            l'indice del ciclo e il numero stesso
+         */
+        /*
+         Scrivere un programma che:
+            - Crei un array di stringhe di dimensione arbitraria
+            - Popoli completamente l'array di stringhe qualsiasi
+            - Tramite un ciclo stampi tutte le stringhe e le relative versioni al contrario (in reverse)
+         */
+        /*
+         Scrivere un programma che:
+            - Chieda all'utente un numero intero
+            - Generi una stringa di lunghezza pari al numero comporta di caratteri casuali
+         */
+        /*
+         Scrivere un programma che:
+            - Dato un testo preso da file, lo codifichi tramite un algoritmo qualsiasi
+            - Dato il testo cifrato, permetta anche di decifrarlo
+         */
+        /*
+         Scrivere un programma che:
+            - Chieda all'utente 5 stringhe
+            - Crei un array con i caratteri iniziali di ciascuna delle 5 stringhe
+            - Crei una lista con il resto delle 5 stringhe esclusi i caratteri iniziali
+            - Tramite un ciclo for stampi il contenuto dell'array e della lista di modo che
+            le stringhe vengano stampate correttamente come inserite dall'utente e nell'ordine corretto
+         */
+
         //20210121
         /*
          Scrivere un programma che:
