@@ -13,20 +13,36 @@ namespace ConsoleApplicationsTDPC12
             - cicla su tutti gli elementi di una collection
             - grammaticalmente più semplice del ciclo for
          */
+        /*
+         Scrivere un programma che:
+            - Chieda all'utente 2 stringhe
+            - Crei un array per contenere le 2 stringhe dell'utente
+            - Chieda all'utente 2 numeri interi
+            - Crei una lista per contenere i due numeri dell'utente
+            - Tramite un ciclo for stampi su schermo le due stringhe
+            - Tramite un ciclo foreach stampi su schermo i due numeri
+         */
         static void Main(string[] args)
         {
-            List<string> stringhe = new List<string>();
-            stringhe.Add("Stringa 1");
-            stringhe.Add("Stringa 2");
-            stringhe.Add("Stringa 3");
-            stringhe.Add("Stringa 4");
-            stringhe.Add("Stringa 5");
+            string[] stringhe = new string[2];
+            Console.WriteLine("Inserisci la prima stringa");
+            stringhe[0] = Console.ReadLine();
 
-            for (int i = 0; i < stringhe.Count; i++)
+            Console.WriteLine("Inserisci la seconda stringa");
+            stringhe[1] = Console.ReadLine();
+
+            List<int> numeri = new List<int>();
+            Console.WriteLine("Inserisci il primo numero");
+            numeri.Add(int.Parse(Console.ReadLine()));
+
+            Console.WriteLine("Inserisci il secondo numero");
+            numeri.Add(int.Parse(Console.ReadLine()));
+
+            for (int i = 0; i < stringhe.Length; i++)
                 Console.WriteLine(stringhe[i]);
 
-            foreach (string stringa in stringhe)
-                Console.WriteLine(stringa);
+            foreach (int numero in numeri)
+                Console.WriteLine(numero);
 
             Console.ReadKey();
         }
