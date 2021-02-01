@@ -14,6 +14,30 @@ namespace ConsoleApplicationsTDPC12
             - grammaticalmente più semplice del ciclo for
          */
         /*
+         * Termine: 21.25
+         Scrivere un programma che:
+            - Chiedere all'utente il suo nome
+            - Stampare su schermo la lunghezza del nome dell'utente
+            - Chiedere all'utente un numero
+            - Stampare su schermo la somma tra la lunghezza del nome e il numero dell'utente
+            - Sommare alla data corrente il numero inserito dall'utente e stampare su schermo
+            il risultato
+        */
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Inserisci il tuo nome");
+            string nome = Console.ReadLine();
+            Console.WriteLine("Lunghezza nome: " + nome.Length);
+
+            Console.WriteLine("Inserisci un numero");
+            int numero = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Somma: " + (nome.Length + numero));
+
+            DateTime oggi = DateTime.Now;
+            Console.WriteLine(oggi.AddDays(numero));
+        }
+        /*
          Scrivere un programma che:
             - Dato un numero generato a caso tra 1 e 10, creare un array di tale dimensione
             e riempirlo di altrettanti numeri casuali
@@ -21,6 +45,7 @@ namespace ConsoleApplicationsTDPC12
             - Chiede all'utente un indice
             - Stampare su schermo il numero, nella lista, corrispondente all'indice dell'utente
         */
+        /*
         static void Main(string[] args)
         {
             Random r = new Random();
@@ -48,6 +73,7 @@ namespace ConsoleApplicationsTDPC12
             }
             Console.ReadKey();
         }
+        */
         /*
          Scrivere un programma che:
             - Chieda all'utente 2 stringhe
