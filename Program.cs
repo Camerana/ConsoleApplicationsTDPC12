@@ -60,10 +60,50 @@ namespace ConsoleApplicationsTDPC12
             - tramite una funzione stampi su schermo il nome dell'utente anagrammato
          */
         /*
+        !! SPOILER !!
+
+         Console.WriteLine("Inserisci il tuo nome");
+            string nome = Console.ReadLine();
+
+            string anagramma = string.Empty;
+
+            List<char> chars = nome.ToList();
+
+            Random r = new Random();
+            while (chars.Count > 0)
+            {
+                char estratto = chars[r.Next(0, chars.Count)];
+                anagramma += estratto;
+                chars.Remove(estratto);
+            }
+            Console.WriteLine(anagramma);
+            Console.ReadKey();
+         */
+
+        /*
          Scrivere un programma che:
             - chieda all'utente 3 numeri (a,b,c)
             - calcoli altri 3 numeri (x,y,z), di modo che le moltiplicazioni a*x, b*y e c*z
             abbiano lo stesso risultato
+         */
+        /*
+         !! SPOILER !!
+            Console.WriteLine("Inserisci a");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Inserisci b");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Inserisci c");
+            int c = int.Parse(Console.ReadLine());
+
+            int x = b * c;
+            int y = a * c;
+            int z = a * b;
+
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(z);
+
+            Console.ReadKey();         
          */
         /*
          Scrivere un programma che:
