@@ -9,6 +9,7 @@ namespace ConsoleApplicationsTDPC12
     public class Program
     {
         /*
+         * Termine: 21.10
                 Creare una classe Animale con:
                     - una property Nome
                     - una property Razza
