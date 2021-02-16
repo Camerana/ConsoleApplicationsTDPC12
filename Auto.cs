@@ -8,6 +8,7 @@ namespace ConsoleApplicationsTDPC12
 {
     public class Auto
     {
+        /*
         private string modello;
         public string Modello
         {
@@ -24,6 +25,8 @@ namespace ConsoleApplicationsTDPC12
                     this.modello = value;
             }
         }
+        */
+        public string Modello { get; set; }
         public string Targa { get; set; }
         public int NumeroPosti { get; set; }
 
