@@ -10,12 +10,28 @@ namespace ConsoleApplicationsTDPC12
     {
         /*
          Scrivere un programma che:
+         - abbia una classe Persona:
+            - con properties:
+            - Nome e Cognome di tipo stringa
+            - AnimaleDomestico di tipo Animale con properties:
+                - Nome e Razza di tipo stringa
+         - crei un oggetto di tipo Persona che abbia al suo interno un
+         oggetto di tipo Animale, entrambi pienamente valorizzati
+         */
+        static void Main(string[] args)
+        {
+
+
+        }
+        /*
+         Scrivere un programma che:
             - data una classe Persona con properties Nome e Cognome:
                 - chieda all'utente Nome e Cognome di una Persona da creare
                 - crei un oggetto di tipo Persona e lo valorizzi coi dati scelti
                 dall'utente
                 - stampi su schermo i valori dell'oggetto creato
          */
+        /*
         static void Main(string[] args)
         {
             Console.WriteLine("Inserisci il nome");
@@ -32,6 +48,7 @@ namespace ConsoleApplicationsTDPC12
             Console.WriteLine("Cognome: " + p.Cognome);
             Console.ReadKey();
         }
+        */
         /*
          Scrivere un programma che:
             - data una classe Animale con properties Nome e Razza di tipo string:

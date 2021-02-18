@@ -10,5 +10,6 @@ namespace ConsoleApplicationsTDPC12
     {
         public string Nome { get; set; }
         public string Cognome { get; set; }
+        public Animale AnimaleDomestico { get; set; }
     }
 }

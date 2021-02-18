@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplicationsTDPC12
 {
-    class Animale
+    public class Animale
     {
         public string Nome { get; set; }
         public string Razza { get; set; }
+
+        public Animale()
+        {
+
+        }
 
         public Animale(string nome, string razza)
         {
