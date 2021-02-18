@@ -10,8 +10,7 @@ namespace ConsoleApplicationsTDPC12
     {
         /*
          Scrivere un programma che:
-         - abbia una classe Persona:
-            - con properties:
+         - abbia una classe Persona con properties:
             - Nome e Cognome di tipo stringa
             - AnimaleDomestico di tipo Animale con properties:
                 - Nome e Razza di tipo stringa
@@ -20,8 +19,12 @@ namespace ConsoleApplicationsTDPC12
          */
         static void Main(string[] args)
         {
-
-
+            Persona p = new Persona();
+            p.Nome = "Fred";
+            p.Cognome = "Bongusto";
+            p.AnimaleDomestico = new Animale();
+            p.AnimaleDomestico.Nome = "Fuffi";
+            p.AnimaleDomestico.Razza = "Cane";
         }
         /*
          Scrivere un programma che:
