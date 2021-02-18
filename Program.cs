@@ -8,9 +8,29 @@ namespace ConsoleApplicationsTDPC12
 {
     public class Program
     {
+        /*
+         Scrivere un programma che:
+            - data una classe Persona con properties Nome e Cognome:
+                - chieda all'utente Nome e Cognome di una Persona da creare
+                - crei un oggetto di tipo Persona e lo valorizzi coi dati scelti
+                dall'utente
+                - stampi su schermo i valori dell'oggetto creato
+         */
         static void Main(string[] args)
         {
+            Console.WriteLine("Inserisci il nome");
+            string nome = Console.ReadLine();
 
+            Console.WriteLine("Inserisci il cognome");
+            string cognome = Console.ReadLine();
+
+            Persona p = new Persona();
+            p.Nome = nome;
+            p.Cognome = cognome;
+
+            Console.WriteLine("Nome: " + p.Nome);
+            Console.WriteLine("Cognome: " + p.Cognome);
+            Console.ReadKey();
         }
         /*
          Scrivere un programma che:
