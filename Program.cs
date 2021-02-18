@@ -8,6 +8,40 @@ namespace ConsoleApplicationsTDPC12
 {
     public class Program
     {
+        static void Main(string[] args)
+        {
+
+        }
+        /*
+         Scrivere un programma che:
+            - data una classe Animale con properties Nome e Razza di tipo string:
+                - istanzi 1000 oggetti di tipo Animale popolandone i valori
+                nel costruttore e li salvi in una lista
+                - stampi su schermo i dati dei 1000 oggetti
+
+            - costruttore da usare:
+             public Animale(string nome, string razza)
+            {
+                this.Nome = nome;
+                this.Razza = razza;
+            }
+         */
+        /*
+        static void Main(string[] args)
+        {
+            List<Animale> lista = new List<Animale>();
+            for (int i = 0; i < 1000; i++)
+            {
+                Animale a = new Animale("Nome" + i, "Razza" + i);
+                lista.Add(a);
+            }
+            foreach (Animale a in lista)
+            {
+                Console.WriteLine(a.Nome + " è di razza: " + a.Razza);
+            }
+            Console.ReadKey();
+        }
+        */
         /*
             Creare una classe Animale con:
                 - una property Nome
@@ -18,6 +52,7 @@ namespace ConsoleApplicationsTDPC12
             Stampare su schermo le properties dei due oggetti
             Chiamare la funzione Muoviti di entrambi gli oggetti
          */
+        /*
         static void Main(string[] args)
         {
             Animale a1 = new Animale();
@@ -39,5 +74,6 @@ namespace ConsoleApplicationsTDPC12
 
             Console.ReadKey();
         }
+        */
     }
 }
