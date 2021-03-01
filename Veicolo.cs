@@ -9,5 +9,9 @@ namespace ConsoleApplicationsTDPC12
     public class Veicolo
     {
         public int Cilindrata { get; set; }
+        public virtual void Stampa()
+        {
+            Console.WriteLine("Cilindrata: " + this.Cilindrata);
+        }
     }
 }
