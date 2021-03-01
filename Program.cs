@@ -8,6 +8,10 @@ namespace ConsoleApplicationsTDPC12
 {
     class Program
     {
+        static void Main(string[] args)
+        {
+
+        }
         /*
          Scrivere un programma che:
             - Abbia le seguenti classi:
@@ -21,18 +25,36 @@ namespace ConsoleApplicationsTDPC12
             - Crei e valorizzi 10 oggetti di tipo Auto
             - Stampi su schermo le loro proprietà         
          */
+        /*
         static void Main(string[] args)
         {
-            Moto m = new Moto();
-            m.LunghezzaCavalletto = 10;
-            m.Cilindrata = 1500;
+            List<Veicolo> veicoli = new List<Veicolo>();
+            Random r = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                Moto m = new Moto();
+                m.Cilindrata = r.Next(1000, 2000);
+                m.LunghezzaCavalletto = r.Next(35, 45);
+                veicoli.Add(m);
 
-
-
-            Auto a = new Auto();
-            a.DiametroVolante = 30;
-            a.Cilindrata = 2000;
-
+                Auto a = new Auto();
+                a.Cilindrata = r.Next(1000, 2000);
+                a.DiametroVolante = r.Next(30, 40);
+                veicoli.Add(a);
+            }
+            foreach (Veicolo v in veicoli)
+            {
+                if (v.GetType() == typeof(Moto))
+                {
+                    Console.WriteLine("Cilindrata: " + v.Cilindrata + ", Cavalletto: " + ((Moto)v).LunghezzaCavalletto);
+                }
+                else if (v.GetType() == typeof(Auto))
+                {
+                    Console.WriteLine("Cilindrata: " + v.Cilindrata + ", Volante: " + ((Auto)v).DiametroVolante);
+                }
+            }
+            Console.ReadKey();
         }
+        */
     }
 }
