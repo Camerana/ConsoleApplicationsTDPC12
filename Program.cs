@@ -9,6 +9,21 @@ namespace ConsoleApplicationsTDPC12
     class Program
     {
         /*
+         * Termine: 21.25
+         Scrivere un programma che:
+            - Abbia le seguenti classi:
+                - Animale con proprietà a scelta
+                - Cane con proprietà a scelta e che eredita da Animale
+                - Ragno con proprietà a scelta e che eredita da Animale
+            - Crei e valorizzi 2 oggetti di tipo Cane
+            - Crei e valorizzi 2 oggetti di tipo Ragno
+            - Stampi su schermo le proprietà degli oggetti
+         */
+        static void Main(string[] args)
+        {
+
+        }
+        /*
          Scrivere un programma che:
             - Abbia le seguenti classi:
                 - Veicolo
@@ -23,6 +38,7 @@ namespace ConsoleApplicationsTDPC12
             - Crei e valorizzi 1 oggetto di tipo Treno
             - Stampi su schermo le loro proprietà         
          */
+        /*
         static void Main(string[] args)
         {
             List<Veicolo> veicoli = new List<Veicolo>();
@@ -47,6 +63,7 @@ namespace ConsoleApplicationsTDPC12
 
             Console.ReadKey();
         }
+        */
         /*
          Scrivere un programma che:
             - Abbia le seguenti classi:
