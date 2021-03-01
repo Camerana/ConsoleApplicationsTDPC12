@@ -9,8 +9,17 @@ namespace ConsoleApplicationsTDPC12
     class Program
     {
         /*
-         
-         
+         Scrivere un programma che:
+            - Abbia le seguenti classi:
+                - Veicolo
+                    - con property int Cilindrata
+                - Auto
+                    - con property int DiametroVolante
+                - Moto
+                    - con property int LunghezzaCavalletto
+            - Crei e valorizzi 10 oggetti di tipo Moto
+            - Crei e valorizzi 10 oggetti di tipo Auto
+            - Stampi su schermo le loro proprietà         
          */
         static void Main(string[] args)
         {
