@@ -1,10 +1,49 @@
 ﻿using ConsoleApplicationsTDPC12.Animali;
+using ConsoleApplicationsTDPC12.Mobili;
+using ConsoleApplicationsTDPC12.Visibilita;
+using LibreriaEsterna;
+using System;
 using System.Collections.Generic;
 
 namespace ConsoleApplicationsTDPC12
 {
     class Program
     {
+        /*
+         * Termine: 20.30
+         Scrivere un programma che:
+            - Abbia le seguenti classi:
+                - Mobile con proprietà a scelta
+                - Sedia con proprietà a scelta e che eredita da Mobile
+                - Armadio con proprietà a scelta e che eredita da Mobile
+            - Chieda all'utente quale tipo di oggetto istanziare tra Sedia e Armadio
+            - Crei un oggetto del tipo scelto, valorizzandolo
+            - Stampare su schermo i dati dell'oggetto
+         */
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Quale oggetto vuoi creare ?");
+            Console.WriteLine("1 = Sedia");
+            Console.WriteLine("2 = Armadio");
+
+            string scelta = Console.ReadLine();
+
+            Mobile m = null;
+            if (scelta == "1")
+            {
+                m = new Sedia();
+                m.Materiale = "Legno";
+                ((Sedia)m).Braccioli = true;
+            }
+            else if (scelta == "2")
+            {
+                m = new Armadio();
+                m.Materiale = "Legno";
+                ((Armadio)m).Capienza = 5;
+            }
+            if (m != null)
+                m.Stampa();
+        }
         /*
          Scrivere un programma che:
             - Abbia le seguenti classi:
@@ -15,6 +54,7 @@ namespace ConsoleApplicationsTDPC12
             - Crei e valorizzi 2 oggetti di tipo Ragno
             - Stampi su schermo le proprietà degli oggetti
          */
+        /*
         static void Main(string[] args)
         {
             List<Animale> animali = new List<Animale>();
@@ -35,6 +75,7 @@ namespace ConsoleApplicationsTDPC12
                 a.Stampa();
             }
         }
+        */
         /*
          Scrivere un programma che:
             - Abbia le seguenti classi:
