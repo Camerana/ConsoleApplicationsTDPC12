@@ -10,7 +10,21 @@ namespace ConsoleApplicationsTDPC12
     class Program
     {
         /*
-         * Termine: 20.30
+         * Termine: 21.25
+         Scrivere un programma che:
+            - Abbia le seguenti classi:
+                - Persona
+                - Docente che eredita da Persona
+                - Studente che eredita da Persona
+                - Scuola con al suo interno una property di tipo List<Persona>
+            - Creare un oggetto di tipo Scuola e nella lista (List<Persona>) aggiungerci
+            20 oggetti di tipo Docente e 200 oggetti di tipo Studente
+            - Stampare su schermo il numero di Docenti creati e il numero di Studenti creati
+         */
+        static void Main(string[] args)
+        {
+        }
+        /*
          Scrivere un programma che:
             - Abbia le seguenti classi:
                 - Mobile con proprietà a scelta
@@ -20,6 +34,7 @@ namespace ConsoleApplicationsTDPC12
             - Crei un oggetto del tipo scelto, valorizzandolo
             - Stampare su schermo i dati dell'oggetto
          */
+        /*
         static void Main(string[] args)
         {
             Console.WriteLine("Quale oggetto vuoi creare ?");
@@ -44,6 +59,7 @@ namespace ConsoleApplicationsTDPC12
             if (m != null)
                 m.Stampa();
         }
+        */
         /*
          Scrivere un programma che:
             - Abbia le seguenti classi:
