@@ -1,15 +1,11 @@
-﻿using System;
+﻿using ConsoleApplicationsTDPC12.Animali;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApplicationsTDPC12
 {
     class Program
     {
         /*
-         * Termine: 21.25
          Scrivere un programma che:
             - Abbia le seguenti classi:
                 - Animale con proprietà a scelta
@@ -21,7 +17,23 @@ namespace ConsoleApplicationsTDPC12
          */
         static void Main(string[] args)
         {
+            List<Animale> animali = new List<Animale>();
+            for (int i = 0; i < 2; i++)
+            {
+                Cane c = new Cane();
+                c.Colore = "Nero";
+                c.TipoPelo = "Lungo";
+                animali.Add(c);
 
+                Ragno r = new Ragno();
+                r.Colore = "Marrone";
+                r.IsVelenoso = true;
+                animali.Add(r);
+            }
+            foreach (Animale a in animali)
+            {
+                a.Stampa();
+            }
         }
         /*
          Scrivere un programma che:

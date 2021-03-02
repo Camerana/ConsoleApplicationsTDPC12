@@ -43,15 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Auto.cs" />
-    <Compile Include="Moto.cs" />
+    <Compile Include="Animali\Animale.cs" />
+    <Compile Include="Animali\Cane.cs" />
+    <Compile Include="Animali\Ragno.cs" />
+    <Compile Include="Veicoli\Auto.cs" />
+    <Compile Include="Veicoli\Moto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Treno.cs" />
-    <Compile Include="Veicolo.cs" />
+    <Compile Include="Veicoli\Treno.cs" />
+    <Compile Include="Veicoli\Veicolo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
