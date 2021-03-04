@@ -1,5 +1,6 @@
 ﻿using ConsoleApplicationsTDPC12.Animali;
 using ConsoleApplicationsTDPC12.Mobili;
+using ConsoleApplicationsTDPC12.Scuola;
 using ConsoleApplicationsTDPC12.Visibilita;
 using LibreriaEsterna;
 using System;
@@ -23,6 +24,19 @@ namespace ConsoleApplicationsTDPC12
          */
         static void Main(string[] args)
         {
+            Scuola.Scuola scuola = new Scuola.Scuola();
+            for (int i = 0; i < 20; i++)
+            {
+                Docente docente = new Docente();
+                scuola.persone.Add(docente);
+            }
+            for (int i = 0; i < 200; i++)
+            {
+                Studente studente = new Studente();
+                scuola.persone.Add(studente);
+            }
+            Console.WriteLine("Docenti creati: " + 20);
+            Console.WriteLine("Studenti creati: " + 200);
         }
         /*
          Scrivere un programma che:

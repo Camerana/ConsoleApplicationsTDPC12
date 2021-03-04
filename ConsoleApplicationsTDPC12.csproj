@@ -49,6 +49,10 @@
     <Compile Include="Mobili\Armadio.cs" />
     <Compile Include="Mobili\Mobile.cs" />
     <Compile Include="Mobili\Sedia.cs" />
+    <Compile Include="Scuola\Docente.cs" />
+    <Compile Include="Scuola\Persona.cs" />
+    <Compile Include="Scuola\Scuola.cs" />
+    <Compile Include="Scuola\Studente.cs" />
     <Compile Include="Veicoli\Auto.cs" />
     <Compile Include="Veicoli\Moto.cs" />
     <Compile Include="Program.cs" />
