@@ -5,13 +5,47 @@ using ConsoleApplicationsTDPC12.Visibilita;
 using LibreriaEsterna;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleApplicationsTDPC12
 {
     class Program
     {
         /*
-         * Termine: 21.25
+         * Aggiornamento: 21.20
+         Tramite l'uso di classi simulare un distributore automatico:
+            - classe Distributore
+            - classe Prodotto da cui ereditano:
+                - classe Bevanda
+                - classe Snack
+            - classe Cliente per gestire i soldi del cliente
+            - funzionalità richieste:
+                - offrire una scelta di prodotti al cliente con costi differenti
+                - rispondere positivamente o negativamente a seconda
+                dei soldi disponibili
+         */
+
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            double virgola = r.NextDouble();
+
+            virgola = Math.Round(virgola, 2);
+            int numero = r.Next();
+            virgola = numero + virgola;
+
+            Dictionary<int, string> dict = new Dictionary<int, string>();
+            dict.Add(0, "hi");
+            dict.Add(1, "adsadaw");
+
+            foreach (KeyValuePair<int, string> kvp in dict)
+            {
+
+            }
+
+        }
+
+        /*
          Scrivere un programma che:
             - Abbia le seguenti classi:
                 - Persona
@@ -22,6 +56,7 @@ namespace ConsoleApplicationsTDPC12
             20 oggetti di tipo Docente e 200 oggetti di tipo Studente
             - Stampare su schermo il numero di Docenti creati e il numero di Studenti creati
          */
+        /*
         static void Main(string[] args)
         {
             Scuola.Scuola scuola = new Scuola.Scuola();
@@ -38,6 +73,7 @@ namespace ConsoleApplicationsTDPC12
             Console.WriteLine("Docenti creati: " + 20);
             Console.WriteLine("Studenti creati: " + 200);
         }
+        */
         /*
          Scrivere un programma che:
             - Abbia le seguenti classi:
