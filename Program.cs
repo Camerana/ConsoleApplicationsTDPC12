@@ -10,6 +10,17 @@ namespace ConsoleApplicationsTDPC12
     class Program
     {
         /*
+         Creare un piccolo gioco di ruolo con queste caratteristiche:
+            - Classe Personaggio
+            - Classe Player che eredita da Personaggio
+            - Classe Nemico che eredita da Personaggio
+            - Simulazione di combattimento tra Player e Nemico
+         */
+        static void Main(string[] args)
+        {
+
+        }
+        /*
          Tramite l'uso di classi simulare un distributore automatico:
             - classe Distributore
             - classe Prodotto da cui ereditano:
@@ -21,6 +32,7 @@ namespace ConsoleApplicationsTDPC12
                 - rispondere positivamente o negativamente a seconda
                 dei soldi disponibili
          */
+        /*
         static void Main(string[] args)
         {
             Console.WriteLine("Distributore automatico");
@@ -50,5 +62,6 @@ namespace ConsoleApplicationsTDPC12
             Console.WriteLine("Arrivederci");
             Console.ReadKey();
         }
+        */
     }
 }
