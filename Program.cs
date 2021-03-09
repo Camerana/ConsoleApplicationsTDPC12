@@ -11,7 +11,7 @@ namespace ConsoleApplicationsTDPC12
     {
         /*
          Creare un piccolo gioco di ruolo con queste caratteristiche:
-            - Classe Personaggio
+            - Classe Personaggio (abstract)
             - Classe Player che eredita da Personaggio
             - Classe Nemico che eredita da Personaggio
             - Simulazione di combattimento tra Player e Nemico

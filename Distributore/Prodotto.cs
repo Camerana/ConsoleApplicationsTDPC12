@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplicationsTDPC12.Distributore
 {
-    public class Prodotto
+    public abstract class Prodotto
     {
         public string Tipo { get; set; }
         public decimal Costo { get; set; }
