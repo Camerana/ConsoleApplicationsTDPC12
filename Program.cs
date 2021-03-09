@@ -2,6 +2,7 @@
 using ConsoleApplicationsTDPC12.GDR;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,13 +12,24 @@ namespace ConsoleApplicationsTDPC12
     class Program
     {
         /*
-         * Termine: 20.15
+         Creare un programma che simuli un'agenda:
+            - Permettere all'utente di inserire nuovi nomi con relativi dati
+            - Permettere all'utente di leggere i nomi già esistesti e i relativi dati
+            - Spunti:
+                - scrittura/lettura dei dati su file (classe File in System.IO)
+                - delete/update dei dati esistenti
+         */
+        static void Main(string[] args)
+        {
+        }
+        /*
          Creare un piccolo gioco di ruolo con queste caratteristiche:
             - Classe Personaggio (abstract)
             - Classe Player che eredita da Personaggio
             - Classe Nemico che eredita da Personaggio
             - Simulazione di combattimento tra Player e Nemico
          */
+        /*
         static void Main(string[] args)
         {
             Random random = new Random();
@@ -58,6 +70,7 @@ namespace ConsoleApplicationsTDPC12
                 Console.WriteLine("YOU DIED");
             }
         }
+        */
         /*
          Tramite l'uso di classi simulare un distributore automatico:
             - classe Distributore
