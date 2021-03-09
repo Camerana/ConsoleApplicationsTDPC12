@@ -49,6 +49,9 @@
     <Compile Include="Distributore\Prodotto.cs" />
     <Compile Include="Distributore\ProductGenerator.cs" />
     <Compile Include="Distributore\Snack.cs" />
+    <Compile Include="GDR\Nemico.cs" />
+    <Compile Include="GDR\Player.cs" />
+    <Compile Include="GDR\Personaggio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

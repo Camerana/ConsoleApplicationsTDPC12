@@ -1,4 +1,5 @@
 ﻿using ConsoleApplicationsTDPC12.Distributore;
+using ConsoleApplicationsTDPC12.GDR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace ConsoleApplicationsTDPC12
     class Program
     {
         /*
+         * Termine: 20.15
          Creare un piccolo gioco di ruolo con queste caratteristiche:
             - Classe Personaggio (abstract)
             - Classe Player che eredita da Personaggio
@@ -18,7 +20,43 @@ namespace ConsoleApplicationsTDPC12
          */
         static void Main(string[] args)
         {
+            Random random = new Random();
+            Player player = new Player(random);
+            Nemico nemico = new Nemico(random);
 
+            bool playerHasEscaped = false;
+            while ((player.HP > 0 && nemico.HP > 0) && !playerHasEscaped)
+            {
+                Console.WriteLine("Player has: " + player.HP);
+                Console.WriteLine("Nemico has: " + nemico.HP);
+
+                Console.WriteLine("Press 1 to attack");
+                Console.WriteLine("Press 2 to run");
+                string input = Console.ReadLine();
+
+                if (input == "1")
+                    player.Attack(nemico);
+                else if (input == "2")
+                    playerHasEscaped = player.Run();
+
+                if (!playerHasEscaped)
+                {
+                    if (nemico.HP > 0)
+                        nemico.Attack(player);
+                    else
+                        player.Gold += nemico.GoldReward;
+                }
+            }
+            if (player.HP > 0)
+            {
+                Console.WriteLine("You won");
+                if (!playerHasEscaped)
+                    Console.WriteLine("You obtained: " + nemico.GoldReward);
+            }
+            else
+            {
+                Console.WriteLine("YOU DIED");
+            }
         }
         /*
          Tramite l'uso di classi simulare un distributore automatico:
