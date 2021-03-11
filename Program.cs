@@ -6,13 +6,14 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleApplicationsTDPC12.Rubrica;
 
 namespace ConsoleApplicationsTDPC12
 {
     class Program
     {
         /*
-         Creare un programma che simuli un'agenda:
+         Creare un programma che simuli una rubrica:
             - Permettere all'utente di inserire nuovi nomi con relativi dati
             - Permettere all'utente di leggere i nomi già esistesti e i relativi dati
             - Spunti:
@@ -21,6 +22,24 @@ namespace ConsoleApplicationsTDPC12
          */
         static void Main(string[] args)
         {
+            Rubrica.Rubrica rubrica = new Rubrica.Rubrica();
+            while (true)
+            {
+                Console.WriteLine("Scegli l'operazione da svolgere:");
+                Console.WriteLine("1 = Inserisci nuovo contatto");
+                Console.WriteLine("2 = Leggi contatti esistenti");
+                Console.WriteLine("3 = Cancella un contatto esistente");
+                Console.WriteLine("4 = Modifica un contatto esistente");
+                string input = Console.ReadLine();
+                if (input == "1")
+                    rubrica.InsertContatto();
+                else if (input == "2")
+                    rubrica.PrintContatti();
+                else if (input == "3")
+                    rubrica.PrintContattiForDelete();
+                else if (input == "4")
+                    rubrica.PrintContattiForUpdate();
+            }
         }
         /*
          Creare un piccolo gioco di ruolo con queste caratteristiche:
