@@ -9,7 +9,6 @@ namespace ConsoleApplicationsTDPC12
     class Program
     {
         /*
-         * Aggiornamento:   20.15
          Esercitazione:
             - Realizzare un clone del Tris in console:
             |___|_O_|_X_|        
