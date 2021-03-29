@@ -16,13 +16,28 @@ namespace ConsoleApplicationsTDPC12.Libreria
             new Libro("Nietzsche, F.", "Così parlò Zarathustra"),
         };
 
-        public void PrintLibri()
+        private void PrintLibri(List<Libro> listToPrint)
         {
-            for (int i = 0; i < this.Catalogo.Count; i++)
+            for (int i = 0; i < listToPrint.Count; i++)
             {
-                Libro current = this.Catalogo[i];
+                Libro current = listToPrint[i];
                 Console.WriteLine(current.Autore + ": " + current.Titolo);
             }
+        }
+        public void PrintLibriByAutore()
+        {
+            List<Libro> orderedList = this.Catalogo.OrderBy(l => l.Autore).ToList();
+            PrintLibri(orderedList);
+        }
+        public void PrintLibriByTitolo()
+        {
+            List<Libro> orderedList = this.Catalogo.OrderBy(l => l.Titolo).ToList();
+            PrintLibri(orderedList);
+        }
+        public void SearchLibri()
+        {
+            List<Libro> orderedList = this.Catalogo.Where(l => l.Titolo).ToList();
+            PrintLibri(orderedList);
         }
     }
 }
