@@ -9,11 +9,11 @@ namespace ConsoleApplicationsTDPC12.Libreria
     public class Libreria
     {
         private List<Libro> Catalogo = new List<Libro>() {
-            new Libro("Alighieri, D.","Divina Commedia"),
+            new Libro("Pirandello, L.","Il fu Mattia Pascal"),
             new Libro("Eco, U.","Il nome della rosa"),
+            new Libro("Alighieri, D.","Divina Commedia"),
             new Libro("Manzoni, A.","I Promessi sposi"),
             new Libro("Nietzsche, F.", "Così parlò Zarathustra"),
-            new Libro("Pirandello, L.","Il fu Mattia Pascal")
         };
 
         public void PrintLibri()
