@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ConsoleApplicationsTDPC12.Libreria;
 
 namespace ConsoleApplicationsTDPC12
 {
     class Program
     {
         /*
-         * Aggiornamento: 21.15
          Scrivere un programma che:
             - simuli il catalogo di una libreria
             - abbia un numero N di libri in memoria

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApplicationsTDPC12.Libreria
 {
@@ -15,7 +13,6 @@ namespace ConsoleApplicationsTDPC12.Libreria
             new Libro("Manzoni, A.","I Promessi sposi"),
             new Libro("Nietzsche, F.", "Così parlò Zarathustra"),
         };
-
         private void PrintLibri(List<Libro> listToPrint)
         {
             for (int i = 0; i < listToPrint.Count; i++)
