@@ -12,13 +12,13 @@ namespace ConsoleApplicationsTDPC12
         /*
          * Aggiornamento: 21.15
          Scrivere un programma che:
-            - simuli il catalogo di una libreria -> OK
-            - abbia un numero N di libri in memoria -> OK
-            - all'avvio del programma stampi i libri su schermo -> OK
+            - simuli il catalogo di una libreria
+            - abbia un numero N di libri in memoria
+            - all'avvio del programma stampi i libri su schermo
             - permettere all'utente di stampare i libri 
-            in ordine alfabetico di autore o titolo <- OK
+            in ordine alfabetico di autore o titolo
             - permettere all'utente la ricerca tramite testo libero
-            sia su autore che titolo <- DA FARE ADESSO (this.Catalogo.Where(l => l.Titolo....).ToList();)
+            sia su autore che titolo
          */
         static void Main(string[] args)
         {
@@ -26,6 +26,7 @@ namespace ConsoleApplicationsTDPC12
 
             Console.WriteLine("Premi 1 per ordinare i libri per autore");
             Console.WriteLine("Premi 2 per ordinare i libri per titolo");
+            Console.WriteLine("Premi 3 per la ricerca libera");
             string scelta = Console.ReadLine();
             if (scelta == "1")
             {
@@ -35,8 +36,12 @@ namespace ConsoleApplicationsTDPC12
             {
                 libreria.PrintLibriByTitolo();
             }
-
-
+            else if (scelta == "3")
+            {
+                Console.WriteLine("Cosa vuoi cercare ?");
+                scelta = Console.ReadLine();
+                libreria.SearchLibri(scelta);
+            }
             Console.ReadKey();
         }
     }

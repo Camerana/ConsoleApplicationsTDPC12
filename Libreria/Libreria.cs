@@ -34,9 +34,11 @@ namespace ConsoleApplicationsTDPC12.Libreria
             List<Libro> orderedList = this.Catalogo.OrderBy(l => l.Titolo).ToList();
             PrintLibri(orderedList);
         }
-        public void SearchLibri()
+        public void SearchLibri(string input)
         {
-            List<Libro> orderedList = this.Catalogo.Where(l => l.Titolo).ToList();
+            List<Libro> orderedList = this.Catalogo
+                .Where(l => l.Autore.ToUpperInvariant().Contains(input.ToUpperInvariant())
+                || l.Titolo.ToUpperInvariant().Contains(input.ToUpperInvariant())).ToList();
             PrintLibri(orderedList);
         }
     }
