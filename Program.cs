@@ -10,6 +10,11 @@ namespace ConsoleApplicationsTDPC12
     {
         static void Main(string[] args)
         {
+            ISaNuotare papera = ClassFactory.GetPapera();
+            ISaNuotare pesce = ClassFactory.GetPesce();
+
+            papera.Nuota();
+            pesce.Nuota();
         }
     }
 }
