@@ -15,7 +15,7 @@ namespace ConsoleApplicationsTDPC12
             - abbia due classi, Classe1 e Classe2 che implementino ICanPrint
             e ne abbiano due implementazioni diverse
             - tramite due oggetti, uno di tipo Classe1 e uno di tipo Classe2,
-            chiami le relative implementazioni di ICanPrint
+            chiami le relative implementazioni di Print()
          */
         static void Main(string[] args)
         {
