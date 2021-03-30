@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classi.cs" />
+    <Compile Include="ICanPrint\Classe1.cs" />
+    <Compile Include="ICanPrint\Classe2.cs" />
+    <Compile Include="ICanPrint\ICanPrint.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
