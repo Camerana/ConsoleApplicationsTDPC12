@@ -47,8 +47,20 @@
     <Compile Include="ICanPrint\Classe1.cs" />
     <Compile Include="ICanPrint\Classe2.cs" />
     <Compile Include="ICanPrint\ICanPrint.cs" />
+    <Compile Include="InputOutput\InputHandler.cs" />
+    <Compile Include="InputOutput\OutputHandler.cs" />
+    <Compile Include="InputOutput\IPrintOutput.cs" />
+    <Compile Include="InputOutput\IGetInput.cs" />
+    <Compile Include="IPersona\Androide.cs" />
+    <Compile Include="IPersona\IPersona.cs" />
+    <Compile Include="IPersona\Persona.cs" />
+    <Compile Include="Movimento\Auto.cs" />
+    <Compile Include="Movimento\Nave.cs" />
+    <Compile Include="Movimento\Aereo.cs" />
+    <Compile Include="Movimento\IMuoviti.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
